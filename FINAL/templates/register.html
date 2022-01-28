@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Details</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lora">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.min.css">
+</head>
+<body>
+
+<div class="container">
+  
+  <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container">
+              <a class="navbar-brand" href="#">Student Management System | Team - 12</a>
+            </div>
+        </nav>
+    </div><hr>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        
+      </div>
+      <div class="col-sm-4">
+          <h4>Register</h4>
+            <form action="/insert" method="POST">
+              <div class="form-group">
+                <label for="usr">Name</label>
+                <input name="name" type="text" class="form-control" id="usr">
+              </div>
+              <div class="form-group">
+                <label for="usr">Username</label>
+                <input name="uname" type="text" class="form-control" id="usrnm">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Email</label>
+                <input name="email" type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password</label>
+                <input name="pwd" type="password" class="form-control" id="pwd">
+              </div>
+              <div class="radio">
+                <label>Gender</label><br>
+                <label class="radio-inline"><input type="radio" name="optradio" value="Male">Male</label>
+              </div>
+              <div class="radio">
+                <label class="radio-inline"><input type="radio" name="optradio" value="Female">Female</label>
+              </div>
+               
+
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" rows="5" id="address" name="address"></textarea>
+              </div>
+               
+              <br>
+              <input type="submit" name="reg" value="Register" class="btn btn-success">
+            </form>
+             <div class="container">
+            <a class="navbar-brand" href="{{url_for('login')}}">Already have an account? Login</a>
+            </div>
+      </div>
+    </div>
+    <hr>
+     
+    <br>
+    <br>
+    <hr>
+</div>
+
+</body>
+</html>

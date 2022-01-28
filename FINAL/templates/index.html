@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lora">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.min.css">
+</head>
+<body>
+
+<div class="container">
+  
+  <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container">
+              <a class="navbar-brand" href="#">Student Management System | Team - 12 </a>
+                    </div>
+            </div>
+        </nav>
+    </div><hr>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        
+      </div>
+      <div class="col-sm-4">
+          <h4>Log in</h4>
+            <form action="{{url_for('login')}}" method="POST">
+              <div class="form-group">
+                <label for="pwd">Username</label>
+                <input name="username" type="text" class="form-control" id="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password</label>
+                <input name="password" type="password" class="form-control" id="pwd">
+              </div>               
+              <br>
+              <input type="submit" name="login" value="Log in" class="btn btn-success">
+            </form>
+    <a class="navbar-brand" href="{{url_for('reg')}}">Don't have an account? Register here </a>
+      </div>
+    </div>
+    <hr>
+</div>
+
+</body>
+</html>

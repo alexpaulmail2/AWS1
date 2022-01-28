@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Table</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lora">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.min.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  
+  <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container">
+              <a class="navbar-brand" href="#">Student Management System | Team - 12</a>
+              <span></span><a class="navbar-brand" href="{{url_for('logout')}}">Log out</a>
+            </div>
+        </nav>
+    </div><hr>
+    <br><br>
+    <div class="row">
+
+<h2>Sem - 3 Time-table</h2>
+</br>
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+  </tr>
+  <tr>
+    <td>8:00 - 8:50</td>
+    <td>BDA3121</td>
+    <td>BDA3121</td>
+    <td>BD3P1</td>
+    <td>-</td>
+    <td>BDDE3P1</td>
+    <td>BDA3421</td>
+  </tr>
+  <tr>
+    <td>9:00 - 9:50</td>
+    <td>BDA3121</td>
+    <td>BDA3121</td>
+    <td>BDA3421</td>
+    <td>BD3P6</td>
+    <td>-</td>
+    <td>BD3P3</td>
+  </tr>
+  <tr>
+    <td>10:00 - 10:50</td>
+    <td>-</td>
+    <td>Research Paper Review</td>
+    <td>BDA3321</td>
+    <td>BDA3321</td>
+    <td>-</td>
+    <td>BD3P3</td>
+  </tr>
+   <tr>
+     <td>11:00 - 11:50</td>
+     <td>BDA3321</td>
+     <td>Research Paper Review</td>
+     <td>BDA3421</td>
+     <td>BD3P2</td>
+     <td>BD3P2</td>
+     <td>-</td>
+   </tr>
+   <tr>
+     <td>12:00 - 12:50</td>
+     <td>Placement Ativity</td>
+     <td>Placement Ativity</td>
+     <td>BD3P4</td>
+     <td>BD3P1</td>
+     <td>BDA3321</td>
+     <td>-</td>
+   </tr>
+   <tr>
+     <td>14:00 - 14:50</td>
+     <td>BDADE3521</td>
+     <td>-</td>
+     <td>BDA3422</td>
+     <td>BDADE3521</td>
+     <td>BD3P5</td>
+     <td>BDDE3P4</td>
+   </tr>
+   <tr>
+     <td>15:00 - 15:50</td>
+     <td>BDADE3621</td>
+     <td>-</td>
+     <td>BDA3121</td>
+     <td>BDA3221</td>
+     <td>BD3P5</td>
+     <td>BD3P6</td>
+   </tr>
+   <tr>
+     <td>16:00 - 16:50</td>
+     <td>BDA3P1</td>
+     <td>BD3P3</td>
+     <td>-</td>
+     <td>-</td>
+     <td>BDADE3723</td>
+     <td>-</td>
+   </tr>
+</table>
+</div>
+</div>
+
+</body>
+</html>
+

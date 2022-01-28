@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Lora">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/styles.min.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  
+  <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container">
+              <a class="navbar-brand" href="#">Student Management System | Team - 12</a>
+              <span></span><a class="navbar-brand" href="{{url_for('logout')}}">Log out</a>
+            </div>
+        </nav>
+    </div><hr>
+    <br><br>
+    <div class="row">
+
+<h2>Sem - 3 Student Information</h2>
+</br>
+
+<table>
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Gender</th>
+    <th>Address</th>
+</tr>
+</thead>
+<tbody>
+{% for row in data %}
+<tr>
+    <td>{{row[0]}}</td>
+    <td>{{row[1]}}</td>
+    <td>{{row[2]}}</td>
+    <td>{{row[3]}}</td>
+    <td>{{row[4]}}</td>
+    <td>{{row[5]}}</td>
+</tr>
+{%endfor%}
+
+</tbody>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+
